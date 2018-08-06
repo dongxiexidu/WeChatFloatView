@@ -4,7 +4,7 @@
 //
 //  Created by fashion on 2018/8/3.
 //  Copyright © 2018年 shangZhu. All rights reserved.
-//
+//  博客地址:https://www.jianshu.com/u/6f76b136c31e
 
 #import "BaseNavigationViewController.h"
 #import "TestViewController.h"
@@ -37,23 +37,26 @@
     [ArticleFloatWindow.shareInstance handleNavigationTransition:gesture];
 }
 
-//MARK: - UIGestureRecognizerDelegate
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = true;
     }
     [super pushViewController:viewController animated:animated];
 }
+//MARK: - UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     if (self.viewControllers.count <= 0) {
         return false;
     }
     return true;
 }
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
     return true;
 }
-//MARK: - UIGestureRecognizerDelegate
+
+//MARK: - UINavigationControllerDelegate
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     BOOL isCustomTransition = false;
     

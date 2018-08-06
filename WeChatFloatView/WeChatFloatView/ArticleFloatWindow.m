@@ -4,7 +4,7 @@
 //
 //  Created by fashion on 2018/8/3.
 //  Copyright © 2018年 shangZhu. All rights reserved.
-//
+//  博客地址:https://www.jianshu.com/u/6f76b136c31e
 
 #import "ArticleFloatWindow.h"
 #import "ArticleFloatCollectView.h"
@@ -64,6 +64,8 @@ static ArticleFloatWindow * _instance = nil;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(processRoundEntryView:)];
     [self.roundEntryView addGestureRecognizer:pan];
 }
+
+
 - (void)pushViewController {
     TestViewController *testVC = [[TestViewController alloc] init];
     testVC.isNeedCustomTransition = true;
