@@ -112,7 +112,7 @@ gesture.edges = UIRectEdgeLeft;
 
 
 ## 实现效果
-![demo.gif](https://upload-images.jianshu.io/upload_images/1085173-7c404f4421258147.gif?imageMogr2/auto-orient/strip)
+![demo.gif](https://github.com/dongxiexidu/WeChatFloatView/blob/master/demo.gif)
 
 
 ## 声明:本文参考了以下Swift版本,感谢原作者的开源
